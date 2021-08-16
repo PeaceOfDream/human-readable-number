@@ -34,7 +34,7 @@ module.exports = function toReadable (number) {
 
 	let result = '';
 
-	let num1 = num;
+	let num1 = number;
 	let rest = 0;
 
 	for (let i = 0;i < reversedNumbers.length;i++) {
@@ -54,6 +54,6 @@ module.exports = function toReadable (number) {
 			continue
 		}
 	}
-
-	return result;
+	let res = result.slice(0, -1);
+	return res;
 }
